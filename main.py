@@ -15,8 +15,7 @@ for i in range(0,2):
 # 打开chrome浏览器
         driver = get_web_driver()
 # 进入健康情况填报官网
-        url = r'https://xg.fjsdxy.com/SPCP/Web'
-        driver.get(url)
+        driver.get(r'https://xg.fjsdxy.com/SPCP/Web')
 # 最大化窗口
         driver.maximize_window()
     # 登录信息
