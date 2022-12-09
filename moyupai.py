@@ -1,7 +1,7 @@
 from util import *
 
-username = sys.argv[1] # 登录账号
-password = sys.argv[2] # 登录密码
+username = 12312312 # 登录账号
+password = 22121312 # 登录密码
 img_path = os.getcwd() + "/1.png"
 
 @retry(stop_max_attempt_number=5)
