@@ -12,7 +12,7 @@ for i in range(0,2):
         options = Options()
         options.add_argument('-headless')
 # 打开chrome浏览器
-        driver = webdriver.Chrome()
+        driver = get_web_driver()
 # 进入健康情况填报官网
         url = r'https://xg.fjsdxy.com/SPCP/Web'
         driver.get(url)
