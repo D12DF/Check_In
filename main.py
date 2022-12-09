@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import ddddocr
 from selenium.webdriver.support.ui import Select
+from util import *
 la = ['2616220080','2616220061']
 lc = ['Fjsy@150232','Fjsy@202016']
 for i in range(0,2):
