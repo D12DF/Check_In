@@ -54,7 +54,8 @@ for i in range(0,2):
                     driver.find_element(By.XPATH, '//*[@id="layui-m-layer0"]/div[2]/div/div/div[2]/span').click()
                 except:
                     break
-        time.sleep(6)
+        windows = driver.window_handles   # 获取该会话所有的句柄
+        driver.switch_to.window(windows[-1])  # 跳转到最新的句柄
         driver.find_element(By.ID,'platfrom2').click()# 选择信息采集表
         #driver.find_element(By.XPATH,'//*[@id="platfrom2"]').click()# 选择信息采集表
         while True:
