@@ -58,6 +58,7 @@ for i in range(0,2):
         driver.get(url)
         #driver.find_element(By.ID,'platfrom2').click()# 选择信息采集表
         #driver.find_element(By.XPATH,'//*[@id="platfrom2"]').click()# 选择信息采集表
+        time.sleep(3)
         while True:
             try:
                 while True:
