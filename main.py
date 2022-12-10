@@ -55,11 +55,12 @@ for i in range(0,2):
                     driver.find_element(By.XPATH, '//*[@id="layui-m-layer0"]/div[2]/div/div/div[2]/span').click()
                 except:
                     break
-        url = r'https://xg.fjsdxy.com/SPCP/Web/Report/Index'
-        driver.get(url)
+        #url = r'https://xg.fjsdxy.com/SPCP/Web/Report/Index'
+        #driver.get(url)
         #driver.find_element(By.ID,'platfrom2').click()# 选择信息采集表
-        #driver.find_element(By.XPATH,'//*[@id="platfrom2"]').click()# 选择信息采集表
-        time.sleep(3)
+        time.sleep(50)
+        driver.find_element(By.XPATH,'//*[@id="platfrom2"]').click()# 选择信息采集表
+        time.sleep(20)
         while True:
             try:
                 while True:
