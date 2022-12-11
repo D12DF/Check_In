@@ -57,3 +57,4 @@ while True:
             driver.find_element(By.XPATH, '//*[@id="layui-m-layer0"]/div[2]/div/div/div[2]/span').click()
         except: 
             break
+driver.quit()
