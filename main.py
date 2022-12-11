@@ -27,6 +27,7 @@ for i in range(0,2):
         username = driver.find_element(By.XPATH,'//*[@id="StudentId"]')
         stu_number = la[i]
         username.send_keys(stu_number)
+        print('登录中')
         while True:
             try:
                 driver.find_element(By.XPATH,'//*[@id="platfrom1"]/a/img')  # 尝试获取填体温页面 成功即登录成功
