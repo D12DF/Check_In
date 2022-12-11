@@ -32,7 +32,6 @@ try:
     driver.find_element(By.XPATH,'//*[@id="platfrom2"]').click()
     #driver.find_element(By.XPATH,'//*[@id="platfrom1"]/a/img')  # 尝试获取填体温页面 成功即登录成功
     print('登录成功')
-    break
 except:
     namess = driver.find_element(By.XPATH, '//*[@id="codeInput"]')
     namess.clear()
