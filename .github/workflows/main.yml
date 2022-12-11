@@ -22,10 +22,11 @@ jobs:
         uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: 'Set up Python'
-        uses: actions/setup-python@v1
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
         with:
-           python-version: 3.9
+          python-version: 3.9
       - name: 'Install requirements'
         run: |
           pip install --upgrade pip
@@ -36,8 +37,8 @@ jobs:
         
       - name: 'Working'
         run: |
-          # sudo cp -p ./chromedriver /usr/bin/
-          # chmod -R 777 /usr/bin/chromedriver
+          sudo cp -p ./chromedriver /usr/bin/
+          chmod -R 777 /usr/bin/chromedriver
           # python ./gamekegs.py ${{ secrets.GAMEKEGS_USERNAME }} ${{ secrets.GAMEKEGS_PASSWORD }}
           python ./main.py
           # python ./juejin.py   ${{ secrets.JUEJIN_USERNAME }} ${{ secrets.JUEJIN_PASSWORD }}
