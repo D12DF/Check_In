@@ -37,8 +37,8 @@ jobs:
         
       - name: 'Working'
         run: |
-          sudo cp -p ./chromedriver /usr/bin/
-          chmod -R 777 /usr/bin/chromedriver
+          #sudo cp -p ./chromedriver /usr/bin/
+          #chmod -R 777 /usr/bin/chromedriver
           # python ./gamekegs.py ${{ secrets.GAMEKEGS_USERNAME }} ${{ secrets.GAMEKEGS_PASSWORD }}
           python ./main.py
           # python ./juejin.py   ${{ secrets.JUEJIN_USERNAME }} ${{ secrets.JUEJIN_PASSWORD }}
