@@ -17,7 +17,8 @@ lc = 'Fjsy@150232'
 options = Options()
 options.add_argument('-headless')
 # 打开chrome浏览器
-driver = get_web_driver()
+#driver = get_web_driver()
+driver = webdriver.Chrome()
 # 进入健康情况填报官网
 driver.get(r'https://xg.fjsdxy.com/SPCP/Web')
 # 最大化窗口
