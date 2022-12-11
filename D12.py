@@ -54,9 +54,4 @@ while True:
         name.send_keys(number)
         driver.find_element(By.XPATH, '//*[@id="Submit"]').click()
         print('1')
-        try:
-            driver.find_element(By.XPATH, '//*[@id="layui-m-layer0"]/div[2]/div/div/div[2]/span').click()
-        except: 
-            print('错误')
-            #break
 driver.quit()
